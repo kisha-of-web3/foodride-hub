@@ -91,13 +91,43 @@ export default function HowItWorks() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-rose-600 via-pink-600 to-purple-600 text-white py-20 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&h=1000')",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-rose-700/85 via-pink-700/80 to-purple-700/85" />
+        
+        {/* Floating Elements */}
+        <div className="absolute top-20 left-16 w-16 h-16 bg-pink-300/25 rounded-full animate-bounce delay-400" />
+        <div className="absolute top-32 right-20 w-12 h-12 bg-rose-400/30 rounded-full animate-pulse delay-900" />
+        <div className="absolute bottom-24 left-12 w-18 h-18 bg-purple-300/20 rounded-full animate-bounce delay-600" />
+        <div className="absolute bottom-36 right-16 w-14 h-14 bg-pink-400/25 rounded-full animate-ping delay-200" />
+        
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">How It Works</h1>
-            <p className="text-xl mb-8 text-purple-100">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+              How It <span className="text-pink-200">Works</span>
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-rose-100 animate-fade-in-delay">
               Simple steps to get your food delivered and book rides seamlessly
             </p>
+            <div className="flex justify-center space-x-6 text-rose-100 animate-slide-up">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-pink-300 rounded-full animate-pulse"></div>
+                <span>Easy Process</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-pink-300 rounded-full animate-pulse delay-200"></div>
+                <span>Fast Service</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-pink-300 rounded-full animate-pulse delay-400"></div>
+                <span>Reliable Support</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

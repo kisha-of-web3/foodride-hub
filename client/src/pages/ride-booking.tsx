@@ -145,13 +145,46 @@ export default function RideBooking() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-ride-primary to-blue-600 text-white py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-teal-600 via-cyan-500 to-blue-600 text-white py-20 overflow-hidden">
+        {/* Background Image with Transportation & Nature Theme */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&h=1000')",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-teal-700/85 via-cyan-600/80 to-blue-700/85" />
+        
+        {/* Floating Transportation Elements */}
+        <div className="absolute top-16 left-12 w-18 h-18 bg-cyan-300/25 rounded-full animate-bounce delay-300" />
+        <div className="absolute top-28 right-16 w-12 h-12 bg-teal-400/30 rounded-full animate-pulse delay-800" />
+        <div className="absolute bottom-24 left-8 w-16 h-16 bg-blue-300/20 rounded-full animate-bounce delay-600" />
+        <div className="absolute bottom-36 right-12 w-14 h-14 bg-cyan-400/25 rounded-full animate-ping delay-400" />
+        <div className="absolute top-40 left-1/3 w-10 h-10 bg-teal-300/20 rounded-full animate-pulse delay-1000" />
+        
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Ride Booking</h1>
-            <p className="text-xl mb-8 text-blue-100">
-              Reliable, safe, and comfortable rides whenever you need them
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+              Journey Begins, <br />
+              <span className="text-cyan-200">Nature Connects</span>
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-cyan-100 animate-fade-in-delay">
+              Sustainable transportation that respects the environment and connects communities
             </p>
+            <div className="flex justify-center space-x-6 text-cyan-100 animate-slide-up">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-cyan-300 rounded-full animate-pulse"></div>
+                <span>Eco-Friendly</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-cyan-300 rounded-full animate-pulse delay-200"></div>
+                <span>Local Drivers</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-cyan-300 rounded-full animate-pulse delay-400"></div>
+                <span>Carbon Neutral</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

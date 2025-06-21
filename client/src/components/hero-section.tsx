@@ -13,20 +13,22 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-food-primary via-red-500 to-ride-primary text-white py-20 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-amber-500 via-orange-600 to-emerald-600 text-white py-20 overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&h=1000')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&h=1000')",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-food-primary/90 via-red-500/85 to-ride-primary/90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-amber-600/85 via-orange-700/80 to-emerald-700/85" />
       
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-yellow-300/20 rounded-full animate-bounce delay-1000" />
-      <div className="absolute top-32 right-20 w-16 h-16 bg-white/10 rounded-full animate-pulse" />
-      <div className="absolute bottom-20 left-20 w-12 h-12 bg-yellow-200/30 rounded-full animate-bounce delay-500" />
+      <div className="absolute top-20 left-10 w-20 h-20 bg-amber-300/25 rounded-full animate-bounce delay-1000" />
+      <div className="absolute top-32 right-20 w-16 h-16 bg-emerald-400/20 rounded-full animate-pulse" />
+      <div className="absolute bottom-20 left-20 w-12 h-12 bg-orange-300/30 rounded-full animate-bounce delay-500" />
+      <div className="absolute top-40 right-40 w-8 h-8 bg-yellow-400/25 rounded-full animate-ping delay-700" />
+      <div className="absolute bottom-40 right-10 w-14 h-14 bg-green-400/20 rounded-full animate-bounce delay-300" />
       
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">

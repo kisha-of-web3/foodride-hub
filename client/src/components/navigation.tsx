@@ -33,18 +33,24 @@ export default function Navigation() {
                 How it Works
               </span>
             </Link>
-            <span className="text-gray-700 hover:text-gray-900 transition-colors duration-200 cursor-pointer">
-              Support
-            </span>
+            <Link href="/support">
+              <span className="text-gray-700 hover:text-gray-900 transition-colors duration-200 cursor-pointer">
+                Support
+              </span>
+            </Link>
           </div>
 
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" className="text-gray-700 hover:text-gray-900 font-medium">
-              Sign In
-            </Button>
-            <Button className="bg-food-primary text-white hover:bg-food-primary/90">
-              Sign Up
-            </Button>
+            <Link href="/sign-in">
+              <Button variant="ghost" className="text-gray-700 hover:text-gray-900 font-medium">
+                Sign In
+              </Button>
+            </Link>
+            <Link href="/sign-up">
+              <Button className="bg-food-primary text-white hover:bg-food-primary/90">
+                Sign Up
+              </Button>
+            </Link>
             <Button variant="ghost" size="icon" className="md:hidden">
               <Menu className="h-4 w-4" />
             </Button>

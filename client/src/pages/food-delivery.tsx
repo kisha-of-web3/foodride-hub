@@ -32,13 +32,45 @@ export default function FoodDelivery() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-food-primary to-orange-600 text-white py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-red-600 via-orange-500 to-yellow-400 text-white py-20 overflow-hidden">
+        {/* Background Image with Cultural Food Theme */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&h=1000')",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-red-700/85 via-orange-600/80 to-yellow-500/75" />
+        
+        {/* Floating Food Elements */}
+        <div className="absolute top-16 left-8 w-16 h-16 bg-yellow-300/30 rounded-full animate-bounce delay-500" />
+        <div className="absolute top-24 right-12 w-12 h-12 bg-red-400/25 rounded-full animate-pulse delay-1000" />
+        <div className="absolute bottom-20 left-16 w-20 h-20 bg-orange-300/20 rounded-full animate-bounce delay-700" />
+        <div className="absolute bottom-32 right-8 w-14 h-14 bg-yellow-400/25 rounded-full animate-ping delay-300" />
+        
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Food Delivery</h1>
-            <p className="text-xl mb-8 text-orange-100">
-              Discover amazing restaurants and get your favorite meals delivered fast
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+              Authentic Flavors, <br />
+              <span className="text-yellow-200">Delivered Fresh</span>
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-orange-100 animate-fade-in-delay">
+              Discover culinary treasures from around the world, delivered to your doorstep
             </p>
+            <div className="flex justify-center space-x-6 text-orange-100 animate-slide-up">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-yellow-300 rounded-full animate-pulse"></div>
+                <span>150+ Cuisines</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-yellow-300 rounded-full animate-pulse delay-200"></div>
+                <span>Local & Global</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-yellow-300 rounded-full animate-pulse delay-400"></div>
+                <span>Farm to Table</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
