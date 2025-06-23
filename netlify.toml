@@ -1,0 +1,22 @@
+[build]
+  # Build command for the frontend only
+  command = "vite build"
+  # Directory to publish (where Vite builds the frontend)
+  publish = "dist/public"
+
+[build.environment]
+  # Node version
+  NODE_VERSION = "20"
+
+[[redirects]]
+  # Handle client-side routing - redirect all routes to index.html
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# For development preview builds
+[context.deploy-preview]
+  command = "npm run build"
+  
+[context.branch-deploy]
+  command = "npm run build"
