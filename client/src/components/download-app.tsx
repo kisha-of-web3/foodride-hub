@@ -5,50 +5,50 @@ export default function DownloadApp() {
   return (
     <section className="py-16 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Get the FoodRide Hub App</h2>
-            <p className="text-xl text-gray-300 mb-8">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="max-w-full">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 leading-tight">Get the FoodRide Hub App</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed">
               Download our mobile app for the fastest way to order food and book rides. 
               Available on iOS and Android with exclusive app-only deals.
             </p>
             
-            <div className="space-y-4 mb-8">
+            <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
               <div className="flex items-center space-x-3">
-                <Smartphone className="text-food-primary h-5 w-5" />
-                <span>Faster ordering with saved preferences</span>
+                <Smartphone className="text-food-primary h-5 w-5 flex-shrink-0" />
+                <span className="text-sm sm:text-base">Faster ordering with saved preferences</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Bell className="text-food-primary h-5 w-5" />
-                <span>Real-time notifications and tracking</span>
+                <Bell className="text-food-primary h-5 w-5 flex-shrink-0" />
+                <span className="text-sm sm:text-base">Real-time notifications and tracking</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Tag className="text-food-primary h-5 w-5" />
-                <span>Exclusive app-only promotions</span>
+                <Tag className="text-food-primary h-5 w-5 flex-shrink-0" />
+                <span className="text-sm sm:text-base">Exclusive app-only promotions</span>
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button className="bg-black text-white hover:bg-gray-800 flex items-center px-6 py-3">
-                <div className="mr-3">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button className="bg-black text-white hover:bg-gray-800 flex items-center justify-start px-4 py-3 min-h-[60px] w-full sm:w-auto">
+                <div className="mr-3 flex-shrink-0">
                   <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                   </svg>
                 </div>
-                <div>
-                  <div className="text-xs">Download on the</div>
-                  <div className="font-semibold">App Store</div>
+                <div className="text-left">
+                  <div className="text-xs text-gray-300">Download on the</div>
+                  <div className="font-semibold text-sm">App Store</div>
                 </div>
               </Button>
-              <Button className="bg-black text-white hover:bg-gray-800 flex items-center px-6 py-3">
-                <div className="mr-3">
+              <Button className="bg-black text-white hover:bg-gray-800 flex items-center justify-start px-4 py-3 min-h-[60px] w-full sm:w-auto">
+                <div className="mr-3 flex-shrink-0">
                   <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M22,9.5v5c0,.83-.67,1.5-1.5,1.5s-1.5-.67-1.5-1.5v-5c0-.83,.67-1.5,1.5-1.5s1.5,.67,1.5,1.5Zm-20,0v5c0,.83,.67,1.5,1.5,1.5s1.5-.67,1.5-1.5v-5c0-.83-.67-1.5-1.5-1.5s-1.5,.67-1.5,1.5Zm16-6.5v2c0,.55-.45,1-1,1H7c-.55,0-1-.45-1-1V3c0-.55,.45-1,1-1H17c.55,0,1,.45,1,1Zm-10,8.5c-.55,0-1,.45-1,1s.45,1,1,1,1-.45,1-1-.45-1-1-1Zm8,0c-.55,0-1,.45-1,1s.45,1,1,1,1-.45,1-1-.45-1-1-1Z"/>
+                    <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                   </svg>
                 </div>
-                <div>
-                  <div className="text-xs">Get it on</div>
-                  <div className="font-semibold">Google Play</div>
+                <div className="text-left">
+                  <div className="text-xs text-gray-300">Get it on</div>
+                  <div className="font-semibold text-sm">Google Play</div>
                 </div>
               </Button>
             </div>
